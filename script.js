@@ -1,6 +1,8 @@
+const form = document.getElementById('rick-form')
 const characterURL ="https://rickandmortyapi.com/api/character"
 const locationsURL = "https://rickandmortyapi.com/api/location"
 const episodesURL = "https://rickandmortyapi.com/api/episode"
+
 
 const configObj = {
     method: "GET",
@@ -9,19 +11,19 @@ const configObj = {
     }
 }
 const characterData = 
+
 fetch(characterURL, configObj)
-    .then(response => response.json())
-    //.then(userData => userData.items.forEach(element => displayUserInfo(element)))
-    .then(apiData => console.log(apiData))
+.then(response => response.json())
+.then(charData => charData.results.forEach(charInfo => displayChar(charInfo)))
 
-const locationData = 
-    fetch(locationsURL, configObj)
-    .then(response => response.json())
-    //.then(userData => userData.items.forEach(element => displayUserInfo(element)))
-    .then(apiData => console.log(apiData))
-
-const episodeData = 
-    fetch(episodesURL, configObj)
-    .then(response => response.json())
-    //.then(userData => userData.items.forEach(element => displayUserInfo(element)))
-    .then(apiData => console.log(apiData))
+function displayChar(charInfo){
+    let li = document.createElement('li')
+    document.getElementById('character-list').appendChild(li)
+    
+    
+    let p = document.createElement('p')
+    p.innerHTML = `${charInfo.name}` 
+    li.appendChild(p)
+    
+}
+    
