@@ -1,19 +1,27 @@
-const form = document.getElementById('musicbrainz-form')
+const characterURL ="https://rickandmortyapi.com/api/character"
+const locationsURL = "https://rickandmortyapi.com/api/location"
+const episodesURL = "https://rickandmortyapi.com/api/episode"
 
-form.addEventListener('submit', function(e){
-    e.preventDefault()
-   
-    const search = document.getElementById('search').value
-    
-    const configObj = {
-        method: "GET",
-        headers: {
-            "Content-Type": "applicaiton/json",
-            "Accept": "application/vnd.github.v3+json"
-        }
+const configObj = {
+    method: "GET",
+    headers: {
+        "Content-Type": "applicaiton/json",
     }
-
-    fetch("http://musicbrainz.org/ws/2/artist/?query="+search, configObj)
+}
+const characterData = 
+fetch(characterURL, configObj)
     .then(response => response.json())
     //.then(userData => userData.items.forEach(element => displayUserInfo(element)))
-})
+    .then(apiData => console.log(apiData))
+
+const locationData = 
+    fetch(locationsURL, configObj)
+    .then(response => response.json())
+    //.then(userData => userData.items.forEach(element => displayUserInfo(element)))
+    .then(apiData => console.log(apiData))
+
+const episodeData = 
+    fetch(episodesURL, configObj)
+    .then(response => response.json())
+    //.then(userData => userData.items.forEach(element => displayUserInfo(element)))
+    .then(apiData => console.log(apiData))
