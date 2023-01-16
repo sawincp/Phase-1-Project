@@ -11,17 +11,59 @@
   <body>
     <div id='main'>
 
-      <h1>Rick and Morty Search!</h1>
+      <h1>Rick and Morty Wiki!</h1>
 
-      <div id='character-container'>
+      <form id="search-form">
+        <input id='search' type='text' name='search'>
+        <input type='submit' name='submit'/>
+        
+        <select id="charcter-status" name="status">
+          <option selected="selected" value="Alive" > Status: Alive </option>
+          <option value="Dead">Dead</option>
+          <option value="Unkown">Unkown</option>
+        </select>
+        <select id="character-gender" name="gender">
+          <option selected="selected" value="Male">Gender: Male</option>
+          <option value="Female">Female</option>
+          <option value="Genderless">Genderless</option>
+          <option value="Unknown">Unknown</option>
+        </select>
+      </form>
+        
+      <button id="characters">Characters</button>
+        
+      <button id="locations">Locations</button>
+       
+      <button id="episodes">Episodes</button>
+      
+      <div id="character-container">  
         <table id="characterTable">
-          <thead>
-             <th> Character Name </th>
-             <th> Character Information </th>
+          <thead id='characterHeaders'>
           </thead>
-          <tbody id="tableBody">
-             <tr></tr>
+          <tbody id="characterTableBody">
           </tbody>
-       </table>
+        </table>
+      </div>
+
+      <div id= 'location-container'>
+        <table id="locationTable">
+          <thead id="locationHeaders">
+          </thead>
+          <tbody id="locationTableBody">
+          </tbody>
+        </table>
+      </div>
+
+      <div id= 'episode-container'>
+        <table id="episodeTable">
+          <thead id="episodesHeaders">
+          </thead>
+          <tbody id="episodesTableBody">
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
   </body>
 </html>
