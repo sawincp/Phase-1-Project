@@ -26,7 +26,7 @@ form.addEventListener('submit', (e)=>{
     // alerts user if they type in a wrong character name
     .catch((error)=>{alert('Error: Please search for a Rick and Morty Character')})
     
-})
+},{once: true})
 
 
 // fucntion created to help display character info
@@ -46,6 +46,9 @@ function displayCharacter(info){
     
    // add event listner to display character info
     btn1.addEventListener('click', (e)=>{
+
+        let showData= document.createElement('ul')
+
         let species = document.createElement('ul')
         let location = document.createElement('ul')
         let origin = document.createElement('ul')
@@ -57,10 +60,20 @@ function displayCharacter(info){
         
         episodes.innerText= "Number of Episodes: " + info.episode.length
         
-        row.appendChild(species)
-        row.appendChild(location)
-        row.appendChild(origin)
-        row.appendChild(episodes)
+        showData.addEventListener("mouseover",(e)=>{
+            e.target.style.color ="orange"
+
+            setTimeout(()=>{
+                e.target.style.color ="";
+            },500)
+        }, false)
+
+        showData.appendChild(species)
+        showData.appendChild(location)
+        showData.appendChild(origin)
+        showData.appendChild(episodes)
+
+        row.appendChild(showData)
 
         //allows event to only trigger once
     }, {once: true})
