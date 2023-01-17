@@ -7,18 +7,24 @@ h1{
 
 #search-form{
     text-align: center;
-    margin-bottom:10px;
+    margin-bottom:15px;
 }
-
-#characterHeaders{
-    text-align: center;
-
-}
-
 
 #character-container{
     background-color: black;
     color:white;
-    text-align:left;
+    text-align:center;
 
+}
+
+ul{
+    text-align: left;
+}
+
+th{
+    font-size:30px;
+}
+
+td{
+    font-size: large;
 }
