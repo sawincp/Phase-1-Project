@@ -11,3 +11,23 @@
 - The appliation uses at least one instance of array iterations (forEach) to manipulate the API data in some way. 
 - Applicaiton follows good coding practices. 
 
+### Project Proofs
+
+1. API data includes at least 5 objects with at least 3 attributes:
+(add picutre of API data)
+
+2. Interactions are handled asynchronosuly and use JSON as communication format
+(add code snippet)
+
+3. Entire applicaiton runs on single page
+(show breif gif of application at work)
+
+4. Application has 3 distinct event listners
+(show code snippet of event listeners)
+
+5. Array iteration
+(show code snippet)
+
+### Conclusion
+Based off of the project objectives and the corresponding proofs, the phase 1 project has been completed. 
+
