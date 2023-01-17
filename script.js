@@ -34,40 +34,42 @@ function displayCharacter(info){
     let table = document.getElementById("characterTableBody")
 
     let row = document.createElement('tr')
-
     let name = document.createElement('td')
-    let img = document.createElement('img')
     let btn1 = document.createElement('button')
 
 
     name.innerText= info.name
-    img.src = info.image
     btn1.innerText= "Character Information"
     
    // add event listner to display character info
     btn1.addEventListener('click', (e)=>{
 
         let showData= document.createElement('ul')
+        
+        let image = document.createElement('img')
+        let species = document.createElement('li')
+        let location = document.createElement('li')
+        let origin = document.createElement('li')
+        let episodes = document.createElement('li')
 
-        let species = document.createElement('ul')
-        let location = document.createElement('ul')
-        let origin = document.createElement('ul')
-        let episodes = document.createElement('ul')
-
+        image.src = info.image
         species.innerText= "Species: " + info.species
         location.innerText= "Last known location: " + info.location.name
         origin.innerText= "Origin: " + info.origin.name
         
         episodes.innerText= "Number of Episodes: " + info.episode.length
         
+        // Event to execute every time the cursor is moved over a different list item
         showData.addEventListener("mouseover",(e)=>{
             e.target.style.color ="orange"
-
+            
+            // reset the color after 5 sec
             setTimeout(()=>{
                 e.target.style.color ="";
             },500)
         }, false)
 
+        showData.appendChild(image)
         showData.appendChild(species)
         showData.appendChild(location)
         showData.appendChild(origin)
@@ -79,7 +81,6 @@ function displayCharacter(info){
     }, {once: true})
 
     row.appendChild(name)
-    name.appendChild(img)
     row.appendChild(btn1)
 
     table.appendChild(row)
