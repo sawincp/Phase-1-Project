@@ -38,8 +38,6 @@ function displayCharacter(info){
     let row = document.createElement('tr')
     let name = document.createElement('td')
     let btn1 = document.createElement('button')
-    let button= document.createElement('td')
-
 
 
     name.innerText= info.name
