@@ -32,24 +32,32 @@ form.addEventListener('submit', (e)=>{
 // create table
 function displayCharacter(info){
     
-    let grid=document.getElementById('grid-container')
     
     let table = document.getElementById("characterTableBody")
 
     let row = document.createElement('tr')
     let name = document.createElement('td')
     let btn1 = document.createElement('button')
+    let button= document.createElement('td')
+
 
 
     name.innerText= info.name
     btn1.innerText= "Character Information"
+
+    
     
    // display character info
     btn1.addEventListener('click', (e)=>{
 
-        let showData= document.createElement('ul')
+
+        let showData= document.createElement('td')
+
         
         let image = document.createElement('img')
+        let imgCell= document.createElement('td')
+        imgCell.appendChild(image)
+        
         let species = document.createElement('li')
         let location = document.createElement('li')
         let origin = document.createElement('li')
@@ -72,17 +80,19 @@ function displayCharacter(info){
             },500)
         }, false)
 
-        showData.appendChild(image)
         showData.appendChild(species)
         showData.appendChild(location)
         showData.appendChild(origin)
         showData.appendChild(episodes)
-
+        
+        
+        row.appendChild(imgCell)
         row.appendChild(showData)
+        
 
         //allows event to only trigger once
     }, {once: true})
-
+    
     row.appendChild(name)
     row.appendChild(btn1)
     table.appendChild(row)
