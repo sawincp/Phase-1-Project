@@ -88,7 +88,7 @@ function displayCharacter(info){
         row.appendChild(showData)
         
 
-        //allows event to only trigger once
+        //allows event to trigger once
     }, {once: true})
     
     row.appendChild(name)
