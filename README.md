@@ -31,4 +31,4 @@
 ### Conclusion
 Based off of the project objectives and the corresponding proofs, the phase 1 project has been completed. 
 
-![Screen Shot](/Users/coreysawin/Development/code/phase-1/phase-1-project/Screen Shot.png)
+![Screen_Shot](/Users/coreysawin/Development/code/phase-1/phase-1-project/Screen Shot.png)
