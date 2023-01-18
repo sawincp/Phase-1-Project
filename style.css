@@ -1,7 +1,12 @@
+html{
+    background-color: black;
+}
+
 h1{
     text-align: center;
     background-color: white;
     color: black;
+    padding: 50px;
 }
 
 
@@ -11,7 +16,6 @@ h1{
 }
 
 #character-container{
-    background-color: black;
     color:white;
     text-align:center;
 

@@ -21,8 +21,8 @@ form.addEventListener('submit', (e)=>{
 
     fetch(characterURL+"name="+ search + "&status="+ status +"&gender="+gender)
     .then(response => response.json())
-    //.then(data => data.results.forEach(characterInfo => displayCharacter(characterInfo)))
-    .then(data => console.log(data.results))
+    .then(data => data.results.forEach(characterInfo => displayCharacter(characterInfo)))
+    //.then(data => console.log(data.results))
 
     // alerts user if they type in a wrong character name
     .catch((error)=>{alert('Error: Please search for a Rick and Morty Character')})
