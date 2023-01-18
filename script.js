@@ -32,6 +32,9 @@ form.addEventListener('submit', (e)=>{
 
 // fucntion created to help display character info
 function displayCharacter(info){
+    
+    let grid=document.getElementById('grid-container')
+    
     let table = document.getElementById("characterTableBody")
 
     let row = document.createElement('tr')
