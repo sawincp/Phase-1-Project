@@ -4,16 +4,15 @@ const form = document.getElementById('search-form')
 // assign API URL to variable
 const characterURL =`https://rickandmortyapi.com/api/character/?`
 
+form.addEventListener('submit', (e)=>{
+    e.preventDefault()
 
-let mainHeader = document.getElementById('characterHeaders')
+    let mainHeader = document.getElementById('characterHeaders')
         let header1 = document.createElement('th')
     
         header1.innerText ="Character Name"
     
         mainHeader.appendChild(header1)
-
-form.addEventListener('submit', (e)=>{
-    e.preventDefault()
     
     const search = document.getElementById('search').value
     const status = document.getElementById('charcter-status').value
@@ -30,7 +29,7 @@ form.addEventListener('submit', (e)=>{
 },{once: true})
 
 
-// fucntion created to help display character info
+// create table
 function displayCharacter(info){
     
     let grid=document.getElementById('grid-container')
@@ -45,7 +44,7 @@ function displayCharacter(info){
     name.innerText= info.name
     btn1.innerText= "Character Information"
     
-   // add event listner to display character info
+   // display character info
     btn1.addEventListener('click', (e)=>{
 
         let showData= document.createElement('ul')
@@ -86,7 +85,6 @@ function displayCharacter(info){
 
     row.appendChild(name)
     row.appendChild(btn1)
-
     table.appendChild(row)
 
 }
