@@ -1,48 +1,17 @@
 # Rick and Morty Search!
 
-### By Corey Sawin
+By Corey Sawin
 
-### A simple JavaScript web application that utilizes the Rick and Morty API to display a list of characters and their information. 
-
-
-
-
-## Description
-
-
-The Rick and Morty search web app utilizes the Rick and Morty API (https://rickandmortyapi.com/api/character/?) to filter characters of the cartoon by name (full or partial), status (alive, dead or unkown), and gender (male, female, genderless)
-
-
-# _{Application Name}_
-
-#### By _**{List of contributors}**_
-
-#### _{Brief description of application}_
+A simple JavaScript web application that utilizes the Rick and Morty API to display a list of characters and their related information. 
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+- JavaScript
+- HTML
+- CSS
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+The Rick and Morty search web app utilizes the Rick and Morty API (https://rickandmortyapi.com/api/character/?) to filter characters of the cartoon by name (full or partial), status (alive, dead or unkown), and gender (male, female, genderless). The user will then be able to click a button to show character's full information including what spicies they are, their last known location, their origin and total number of episodes that character has been in during the series. 
 
-## Setup/Installation Requirements
-
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
-
-## Known Bugs
-
-* _Any known issues_
-* _should go here_
-
-## License
+![pageLoad](PageLoad.png)
