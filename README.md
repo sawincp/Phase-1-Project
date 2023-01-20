@@ -12,6 +12,17 @@ A simple JavaScript web application that utilizes the Rick and Morty API to disp
 
 ## Description
 
-The Rick and Morty search web app utilizes the Rick and Morty API (https://rickandmortyapi.com/api/character/?) to filter characters of the cartoon by name (full or partial), status (alive, dead or unkown), and gender (male, female, genderless). The user will then be able to click a button to show character's full information including what spicies they are, their last known location, their origin and total number of episodes that character has been in during the series. 
+On page load, the user will be able to submit a form containg a search value of the name of the Rick and Morty charcater they are looking for. The search value can be eitehr a full name (ie Rick Sanchez) or partial name (ie Rick). The user will also be able to add adittional search parameters by filtering by the character status (Alive, Dead, or Uknown) and/or the character gender (Male, Female, Genderless, or Uknown).
 
 ![Page Load](/Images/PageLoad.png)
+
+
+After the form is submited, the search value plus any additional parameters will fetch the appropriate data from the Rick and Morty API (https://rickandmortyapi.com/api/character/?) and return a list of the corresponding characters. 
+
+![Results](/Images/SearchResults.png)
+
+
+
+
+   <!-- click a button to show character's full information including what spicies they are, their last known location, their origin and total number of episodes that character has been in during the series.  -->
+
