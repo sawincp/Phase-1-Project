@@ -17,7 +17,7 @@ On page load, the user will be able to submit a form containg a search value of 
 ![Page Load](/Images/PageLoad.png)
 
 
-After the form is submited, the search value plus any additional parameters will fetch the appropriate data from the Rick and Morty API (https://rickandmortyapi.com/api/character/?) and return a list of the corresponding characters. 
+After the form is submited, the search value plus any additional parameters will fetch the appropriate data from the Rick and Morty filter API (https://rickandmortyapi.com/api/character/?) and return a list of the corresponding characters. 
 
 ![Results](/Images/SearchResults.png)
 
