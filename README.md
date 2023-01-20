@@ -2,7 +2,7 @@
 
 By Corey Sawin
 
-A simple JavaScript web application that utilizes the Rick and Morty API to display a list of characters and their related information. 
+A simple JavaScript web application that utilizes the Rick and Morty API to display a list of characters and their related character information. 
 
 ## Technologies Used
 
@@ -16,17 +16,27 @@ On page load, the user will be able to submit a form containing a search value o
 
 ![Page Load](/Images/PageLoad.png)
 
-
 After the form is submitted, the search value plus any additional parameters will fetch the appropriate data from the Rick and Morty filter API (https://rickandmortyapi.com/api/character/?) and return a list of the corresponding characters.
 
 ![Results](/Images/SearchResults.png)
 
 From here, the user can click on the "Character Information" button to show the character's full information including an image of the character, what species they are, their last known location, their origin and total number of episodes that character has been in so far during the series.
 
-![Charcter Info](/Images/CharcterInfo.png)
+![Character Info](/Images/CharcterInfo.png)
 
 Additionally, the user can hover their mouse over any piece of the character information to highlight that portion orange. 
 
 Finally, if the user tries to search for something other than a Rick and Morty character or if the search criteria return a null argument, an alert will show up on the page explaining this to the user.
 
 ![Alert](/Images/Alert.png)
+
+## Setup/Installation Requirements
+
+- Clone this repository to your desktop
+- Navigate to the top level of the directory
+- open index.html in your browser
+
+## Known Bugs
+
+- Toggling character information
+- Resetting search form without having to reload page
