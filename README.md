@@ -21,8 +21,7 @@ After the form is submited, the search value plus any additional parameters will
 
 ![Results](/Images/SearchResults.png)
 
+From here, the user can click on the "Character Information" button to show the character's full information including an image of the character, what spicies they are, their last known location, their origin and total number of episodes that character has been in so far during the series.
 
-
-
-   <!-- click a button to show character's full information including what spicies they are, their last known location, their origin and total number of episodes that character has been in during the series.  -->
+![Charcter Info](/Images/CharcterInfo.png)
 
